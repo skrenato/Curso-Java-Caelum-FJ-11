@@ -3,7 +3,7 @@ class Conta {
     String titular, agencia, dataDeAbertura;
     int numero;
     double saldo;
-
+    
     void saca (double valor) {
 
         this.saldo -= valor;    
@@ -17,7 +17,7 @@ class Conta {
     }
 
     double calculaRendimento() {
-       
+        
         return this.saldo * 0.1;
         
     }

@@ -1,9 +1,11 @@
-class Conta {
+class Conta6 {
 
-    String titular, agencia, dataDeAbertura;
+    String titular, agencia;
     int numero;
     double saldo;
-
+    
+    Data dataDeAbertura;
+    
     void saca (double valor) {
 
         this.saldo -= valor;    
@@ -17,11 +19,11 @@ class Conta {
     }
 
     double calculaRendimento() {
-       
+
         return this.saldo * 0.1;
         
     }
-
+    
     String recuperaDadosParaImpressao() {
 
         String dados = "Titular: " + this.titular;
