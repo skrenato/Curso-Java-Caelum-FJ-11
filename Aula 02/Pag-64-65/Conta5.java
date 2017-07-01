@@ -95,9 +95,9 @@ class Conta5 {
     public Conta5(String titular) {
     
         this.titular = titular;
-        this.identificador = contador;
         this.contador += 1;
-    
+        this.identificador = contador;
+            
     }
     
     public int getIdentificador() {
