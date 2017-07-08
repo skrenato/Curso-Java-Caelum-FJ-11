@@ -11,6 +11,8 @@ public class TestaConta {
 		conta.setTitular("Renato");
 		conta.deposita(300.0);
 		//
+		/*
+		 * mudamos o saca de boolean para void
 		if (conta.saca(200.0)) {
 
 			System.out.println("\nSacou");
@@ -20,7 +22,7 @@ public class TestaConta {
 			System.out.println("\nNao Sacou");
 
 		}
-
+		*/
 	}
 
 }
