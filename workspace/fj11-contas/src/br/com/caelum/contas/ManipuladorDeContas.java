@@ -6,7 +6,6 @@ import br.com.caelum.javafx.api.util.Evento;
 public class ManipuladorDeContas {
 
 	private Conta conta;
-	//rr
 	
 	public void criaConta(Evento evento){
 		

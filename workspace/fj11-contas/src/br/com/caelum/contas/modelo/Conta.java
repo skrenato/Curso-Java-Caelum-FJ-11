@@ -6,7 +6,7 @@ package br.com.caelum.contas.modelo;
  */
 
 
-public class Conta {
+public abstract class Conta {
 	
 	private String titular, agencia, dataDeAbertura;
 	private int numero;
@@ -129,11 +129,7 @@ public class Conta {
 	 * Metodo para verificar o tipo da Conta.
 	 * @return Tipo da Conta.
 	 */
-	public String getTipo() {
-		
-		return "Conta";
-		
-	}
+	public abstract String getTipo();
 	
 	public void transfere(double valor, Conta conta) {
 		
