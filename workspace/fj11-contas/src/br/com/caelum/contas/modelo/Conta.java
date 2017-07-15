@@ -98,9 +98,20 @@ public abstract class Conta {
 	 */
 	public double getSaldo() {
 		
-		return saldo;
+		return this.saldo;
 		
 	}
+	
+	/**
+	 * Metodo para imprimir os dados da conta
+	 * @return Os dados da conta.
+	 */
+	public String recuperaDados()  {
+		
+		return "A conta eh uma: " + this.getTipo();
+		
+	}
+	
 	/**
 	 * Metodo para incrementar o saldo da conta.
 	 * @param valor O valor a ser depositado.
