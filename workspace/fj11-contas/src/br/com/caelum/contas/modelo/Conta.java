@@ -6,7 +6,7 @@ package br.com.caelum.contas.modelo;
  */
 
 
-public abstract class Conta {
+public abstract class Conta implements Comparable<Conta> {
 	
 	private String titular, agencia, dataDeAbertura;
 	private int numero;
@@ -157,7 +157,8 @@ public abstract class Conta {
 		
 	}
 	
-	// exercicio (4) pg 171. 
+	/*
+	 * Exercicio (4) pg 171. 
 	@Override
 	public String toString() {
 		
@@ -165,8 +166,9 @@ public abstract class Conta {
 				+ ", agencia=" + agencia + "]";
 		
 	}
+	*/
 	
-	// exercicio (5) pg 172
+	// Exercicio (5) pg 172
 	@Override
 	public boolean equals(Object obj) {
 		
@@ -180,6 +182,14 @@ public abstract class Conta {
 		
 		return this.numero == outraConta.numero &&
 				this.agencia.equals(outraConta.agencia);
+	}
+	
+	// Exercicios (1) e (2), pg 196 
+	@Override
+	public int compareTo(Conta o) {
+		
+		return this.titular.compareTo(o.titular);
+		
 	}
 	
 }

@@ -1,5 +1,8 @@
 package br.com.caelum.contas;
 
+import java.util.Collections;
+
+import java.util.*;
 import br.com.caelum.contas.modelo.*;
 import br.com.caelum.javafx.api.util.Evento;
 
@@ -48,6 +51,13 @@ public class ManipuladorDeContas {
 		
 		Conta destino = (Conta) evento.getSelecionadoNoCombo("destino");
 		conta.transfere(evento.getDouble("valorTransferencia"), destino);
+		
+	}
+	
+	public void ordenaLista(Evento evento) {
+		
+		List<Conta> contas = evento.getLista("destino");
+		Collections.sort(contas);
 		
 	}
 	
