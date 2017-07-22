@@ -157,7 +157,7 @@ public abstract class Conta {
 		
 	}
 	
-	// exercicio (4) pg 171 
+	// exercicio (4) pg 171. 
 	@Override
 	public String toString() {
 		
