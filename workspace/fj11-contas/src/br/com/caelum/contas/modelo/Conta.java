@@ -157,6 +157,7 @@ public abstract class Conta {
 		
 	}
 	
+	// exercicio (4) pg 171 
 	@Override
 	public String toString() {
 		
@@ -165,6 +166,7 @@ public abstract class Conta {
 		
 	}
 	
+	// exercicio (5) pg 172
 	@Override
 	public boolean equals(Object obj) {
 		
