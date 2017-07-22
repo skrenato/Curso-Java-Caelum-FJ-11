@@ -1,8 +1,7 @@
 package br.com.caelum.contas;
 
-import java.util.Collections;
-
 import java.util.*;
+
 import br.com.caelum.contas.modelo.*;
 import br.com.caelum.javafx.api.util.Evento;
 
